@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Initiation App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .call-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #callFrame{
+            height: 1000px;
+            width: 1000px;
+        }
+        .call-title {
+            margin: 0 0 20px;
+            color: #333;
+        }
+
+        .call-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="call-container">
+        <h1 class="call-title">Start Your Call</h1>
+        <button class="call-button" onclick="openCallScreen()">Initiate Call</button>
+    </div>
+    <div id="callFrame" class="">
+    </div>
+</body>
+<script src="./call.js"></script>
+<script defer src="https://meetdev.melp.us/libs/external_api.min.js?v=141"></script>
+
+</html>
